@@ -5,18 +5,26 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { TopNavigationComponent } from './top-navigation/top-navigation.component';
 import { SideNavigationComponent } from './side-navigation/side-navigation.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 
+
+//Imports Modules
+import { AppRoutes } from '../app/CustomModules/Routing-Module'
+
+//Imports components from routes
+import { ComponentList } from '../app/CustomModules/Routing-Module';
+import { EnquiriesListComponent } from './enquiries-list/enquiries-list.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     TopNavigationComponent,
     SideNavigationComponent,
-    DashboardComponent
+    ComponentList,
+    EnquiriesListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutes
   ],
   providers: [],
   bootstrap: [AppComponent]
