@@ -1,2 +1,0 @@
-# MyTestRepository
-My test projects
